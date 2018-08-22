@@ -14,6 +14,7 @@
 		4C3959B3212D4670008B3164 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3959B1212D4670008B3164 /* LaunchScreen.storyboard */; };
 		4C3959BE212D4670008B3164 /* NChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3959BD212D4670008B3164 /* NChartTests.swift */; };
 		4C3959C9212D4670008B3164 /* NChartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3959C8212D4670008B3164 /* NChartUITests.swift */; };
+		4C3959D7212D4761008B3164 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3959D6212D4761008B3164 /* PushButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4C3959C4212D4670008B3164 /* NChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NChartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C3959C8212D4670008B3164 /* NChartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NChartUITests.swift; sourceTree = "<group>"; };
 		4C3959CA212D4670008B3164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3959D6212D4761008B3164 /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				4C3959AF212D4670008B3164 /* Assets.xcassets */,
 				4C3959B1212D4670008B3164 /* LaunchScreen.storyboard */,
 				4C3959B4212D4670008B3164 /* Info.plist */,
+				4C3959D6212D4761008B3164 /* PushButton.swift */,
 			);
 			path = NChart;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				4C3959AB212D466D008B3164 /* ViewController.swift in Sources */,
 				4C3959A9212D466D008B3164 /* AppDelegate.swift in Sources */,
+				4C3959D7212D4761008B3164 /* PushButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3KLV3MX4CA;
+				DEVELOPMENT_TEAM = DVKPWWHTCM;
 				INFOPLIST_FILE = NChart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,7 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3KLV3MX4CA;
+				DEVELOPMENT_TEAM = DVKPWWHTCM;
 				INFOPLIST_FILE = NChart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
