@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet fileprivate weak var counterView: CounterView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-
+    @IBAction func pushButtonPressed(_ button: PushButton) {
+        if button.isAddButton {
+            counterView.counter += 1
+        } else {
+            if counterView.counter > 0 {
+                counterView.counter -= 1
+            }
+        }
+        counterView.counterLabel.text = String(counterView.counter)
+    }
 }
