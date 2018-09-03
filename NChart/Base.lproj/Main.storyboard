@@ -50,55 +50,96 @@
                                     <action selector="pushButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TjE-ZY-Loa"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVc-AJ-AD3" customClass="CounterView" customModule="NChart" customModuleProvider="target">
-                                <rect key="frame" x="72.5" y="123.5" width="230" height="230"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmh-f0-WzV">
+                                <rect key="frame" x="37.5" y="73.5" width="300" height="300"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXQ-n3-hFI">
-                                        <rect key="frame" x="104" y="93.5" width="21" height="43"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVc-AJ-AD3" customClass="CounterView" customModule="NChart" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="34.5" width="230" height="230"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXQ-n3-hFI">
+                                                <rect key="frame" x="104" y="93.5" width="21" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="lXQ-n3-hFI" firstAttribute="centerX" secondItem="RVc-AJ-AD3" secondAttribute="centerX" id="Ecv-YI-5ZF"/>
+                                            <constraint firstItem="lXQ-n3-hFI" firstAttribute="centerY" secondItem="RVc-AJ-AD3" secondAttribute="centerY" id="JIY-jN-KCX"/>
+                                            <constraint firstAttribute="width" constant="230" id="SOb-c2-SSB"/>
+                                            <constraint firstAttribute="height" constant="230" id="a8T-rE-WFo"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                                <color key="value" red="0.13333333333333333" green="0.43137254901960786" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                                <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="counter">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="counterLabel" destination="lXQ-n3-hFI" id="Kp8-IU-2JN"/>
+                                        </connections>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gq5-KP-Cda" customClass="GraphView" customModule="NChart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="25" width="300" height="250"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="4GN-hZ-N3Q"/>
+                                            <constraint firstAttribute="width" constant="300" id="NOb-Mr-Ugo"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" red="0.98039215686274506" green="0.9137254901960784" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" red="0.9882352941176471" green="0.30980392156862746" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstItem="lXQ-n3-hFI" firstAttribute="centerX" secondItem="RVc-AJ-AD3" secondAttribute="centerX" id="Ecv-YI-5ZF"/>
-                                    <constraint firstItem="lXQ-n3-hFI" firstAttribute="centerY" secondItem="RVc-AJ-AD3" secondAttribute="centerY" id="JIY-jN-KCX"/>
-                                    <constraint firstAttribute="width" constant="230" id="SOb-c2-SSB"/>
-                                    <constraint firstAttribute="height" constant="230" id="a8T-rE-WFo"/>
+                                    <constraint firstItem="gq5-KP-Cda" firstAttribute="centerX" secondItem="tmh-f0-WzV" secondAttribute="centerX" id="6eq-CT-7WE"/>
+                                    <constraint firstAttribute="width" constant="300" id="ZA7-7e-RM5"/>
+                                    <constraint firstItem="RVc-AJ-AD3" firstAttribute="centerX" secondItem="tmh-f0-WzV" secondAttribute="centerX" id="g3S-ET-F2l"/>
+                                    <constraint firstItem="RVc-AJ-AD3" firstAttribute="centerY" secondItem="tmh-f0-WzV" secondAttribute="centerY" id="ip4-gr-0D7"/>
+                                    <constraint firstAttribute="height" constant="300" id="wBW-af-SlE"/>
+                                    <constraint firstItem="gq5-KP-Cda" firstAttribute="centerY" secondItem="tmh-f0-WzV" secondAttribute="centerY" id="x1r-I4-RTL"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
-                                        <color key="value" red="0.13333333333333333" green="0.43137254901960786" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
-                                        <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="counter">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outlet property="counterLabel" destination="lXQ-n3-hFI" id="Kp8-IU-2JN"/>
+                                    <outletCollection property="gestureRecognizers" destination="Xds-ae-rMO" appends="YES" id="z1o-Td-CfJ"/>
                                 </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="tmh-f0-WzV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dvk-89-sj5"/>
                             <constraint firstItem="wbn-TF-63E" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LeM-yz-whb"/>
                             <constraint firstItem="W3L-q8-9l4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="T6o-wr-DCT"/>
                             <constraint firstItem="wbn-TF-63E" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="100" id="dUY-dO-c3i"/>
                             <constraint firstItem="W3L-q8-9l4" firstAttribute="top" secondItem="wbn-TF-63E" secondAttribute="bottom" constant="20" id="ikw-aF-dqj"/>
-                            <constraint firstItem="wbn-TF-63E" firstAttribute="top" secondItem="RVc-AJ-AD3" secondAttribute="bottom" constant="40" id="lhI-Aa-jTM"/>
-                            <constraint firstItem="RVc-AJ-AD3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o6k-zr-9dN"/>
+                            <constraint firstItem="wbn-TF-63E" firstAttribute="top" secondItem="tmh-f0-WzV" secondAttribute="bottom" constant="20" id="wBl-hD-VD0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="tmh-f0-WzV" id="ZSq-gu-Lhi"/>
                         <outlet property="counterView" destination="RVc-AJ-AD3" id="1Pk-Ud-QVq"/>
+                        <outlet property="graphView" destination="gq5-KP-Cda" id="fG1-tj-Vob"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Xds-ae-rMO">
+                    <connections>
+                        <action selector="counterViewTap:" destination="BYZ-38-t0r" id="9OJ-TK-6IL"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="116" y="117.39130434782609"/>
         </scene>
