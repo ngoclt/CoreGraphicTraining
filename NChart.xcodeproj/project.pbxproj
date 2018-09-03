@@ -17,6 +17,7 @@
 		4C3959C9212D4670008B3164 /* NChartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3959C8212D4670008B3164 /* NChartUITests.swift */; };
 		4C3959D7212D4761008B3164 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3959D6212D4761008B3164 /* PushButton.swift */; };
 		4C3FB149212DA3BD00CDDD8B /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3FB148212DA3BD00CDDD8B /* CounterView.swift */; };
+		4C9CBE41213D4FE700748BCE /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CBE40213D4FE700748BCE /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		4C3959CA212D4670008B3164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C3959D6212D4761008B3164 /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
 		4C3FB148212DA3BD00CDDD8B /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		4C9CBE40213D4FE700748BCE /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +105,13 @@
 		4C3959A7212D466D008B3164 /* NChart */ = {
 			isa = PBXGroup;
 			children = (
+				4C9CBE42213D502800748BCE /* Example */,
+				4C9CBE3F213D4A7D00748BCE /* Charts */,
 				4C3959A8212D466D008B3164 /* AppDelegate.swift */,
-				4C3959AA212D466D008B3164 /* ViewController.swift */,
 				4C3959AC212D466D008B3164 /* Main.storyboard */,
 				4C3959AF212D4670008B3164 /* Assets.xcassets */,
 				4C3959B1212D4670008B3164 /* LaunchScreen.storyboard */,
 				4C3959B4212D4670008B3164 /* Info.plist */,
-				4C3959D6212D4761008B3164 /* PushButton.swift */,
-				4C3FB148212DA3BD00CDDD8B /* CounterView.swift */,
-				4C340C2C2136B03900B8F381 /* GraphView.swift */,
 			);
 			path = NChart;
 			sourceTree = "<group>";
@@ -132,6 +132,25 @@
 				4C3959CA212D4670008B3164 /* Info.plist */,
 			);
 			path = NChartUITests;
+			sourceTree = "<group>";
+		};
+		4C9CBE3F213D4A7D00748BCE /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				4C9CBE40213D4FE700748BCE /* ChartView.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		4C9CBE42213D502800748BCE /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				4C3959D6212D4761008B3164 /* PushButton.swift */,
+				4C3FB148212DA3BD00CDDD8B /* CounterView.swift */,
+				4C340C2C2136B03900B8F381 /* GraphView.swift */,
+				4C3959AA212D466D008B3164 /* ViewController.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +289,7 @@
 				4C3959A9212D466D008B3164 /* AppDelegate.swift in Sources */,
 				4C3959D7212D4761008B3164 /* PushButton.swift in Sources */,
 				4C3FB149212DA3BD00CDDD8B /* CounterView.swift in Sources */,
+				4C9CBE41213D4FE700748BCE /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
