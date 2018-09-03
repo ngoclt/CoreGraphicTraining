@@ -143,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="116" y="117.39130434782609"/>
         </scene>
-        <!--View Controller-->
+        <!--Chart View Controller-->
         <scene sceneID="bIf-29-FI0">
             <objects>
-                <viewController id="ueL-Hq-A32" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChartViewController" id="ueL-Hq-A32" customClass="ChartViewController" customModule="NChart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KVb-lo-cHd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
